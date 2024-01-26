@@ -23,6 +23,8 @@ while(True):
             text=(f"The cloud condition in {city} is", wdic["current"]["air_quality"]["co"])
         case "local time":
             text=(f"The cloud condition in {city} is", wdic["location"]["localtime"])
+        case _:
+            text="wrong input"
             
     speak.Speak(text)        
 
